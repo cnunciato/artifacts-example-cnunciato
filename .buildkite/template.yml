@@ -1,8 +1,11 @@
-name: "Artifacts Example"
-description: "An example pipeline that builds, tests, and packages a Python library using Bazel."
-emoji: ":package:"
+name: "Artifacts Example 2"
+description: "An example pipeline from Chris that builds, tests, and packages a Python library using Bazel."
+emoji: ":smile:"
 languages:
   - "Shell"
+  - "Bash"
 steps:
   - label: ":pipeline:"
-    command: "buildkite-agent pipeline upload"
+    command: |
+      buildkite-agent pipeline upload
+      echo "haha"
